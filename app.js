@@ -5,6 +5,19 @@
  * @modify date 2020-12-08 20:11:59
  * @desc [description]
  */
+Vue.createApp({
+  data() {
+    return {
+      goals: [],
+      enteredValue: '',
+    };
+  },
+  methods: {
+    addGoal() {
+      this.goals.push(this.enteredValue);
+    },
+  },
+}).mount('#app');
 // ##############################################
 // ############## Vanilla Javascript ############
 // ##############################################
